@@ -1,25 +1,20 @@
 .meme {
   background-color: #FFFC97;
   height: auto;
-  margin-right: 140px;
-  margin-left: 140px;
+  margin-right: 0;
+  margin-left: 0;
   font-family: Helvetica;
   color: black;
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
   overflow: hidden;
-
+  max-width: 75vw;
 }
-h1 {
-  margin-bottom: 15px;
-  text-align: center;
-}
-.input_meme {
-  appearance: none;
-}
-.meme:hover .label_meme {
-  color: blueviolet;
+.meme_all {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
 }
 .img_meme {
   display: block;
@@ -28,6 +23,25 @@ h1 {
   transform-origin: center;
   margin: 1em auto;
   transition: 1s;
+  max-width: 80%;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.input_meme:checked ~ label .icon_cancel {
+  visibility: visible;
+}
+.icon, .icon_cancel {
+  float: right;
+  opacity: 0;
+}
+.input_meme {
+  appearance: none;
+}
+
+.meme:hover .label_meme {
+  color: blueviolet;
 }
 body {
     background-color: #FFFC97;
@@ -44,13 +58,61 @@ body {
     visibility: hidden;
     width: 0;
 }
+.meme:hover label .icon {
+  visibility: hidden;
+  width: 0;
+}
+.meme:hover label .icon_cancel {
+  visibility: visible;
+}
 hr {
   border: 2px solid #86E59E;
 }
 .icon_cancel {
   visibility: hidden;
 }
-.input_meme:checked ~ label .icon_cancel {
+
+
+@media (min-width: 820px) {
+  .meme_all {
+    width: 40%;
+  }
+  .img_meme {
+    width: 50%;
+  }
+  .h1_text {
+    font-size: 3em;
+  }
+  .label_meme {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1920px) {
+  .meme_all {
+    width: 60%;
+  }
+  .img_meme {
+    width: 40%;
+  }
+  .h1_text {
+    font-size: 4em;
+  }
+  .label_meme {
+    font-size: 2em;
+  }
+}
+.icon {
+  visibility: hidden;
+
+}
+.meme_all:hover .icon {
   visibility: visible;
 }
-
+.meme_all:hover .icon_cancel {
+  opacity: 1;
+  transition: 0.3s;
+}
+.meme_all:hover .icon {
+  opacity: 1;
+  transition: 0.3s;
+}
