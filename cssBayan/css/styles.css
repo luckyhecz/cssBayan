@@ -1,13 +1,14 @@
 .meme {
-  background-color: #C1CAF3;
+  background-color: #FFFC97;
   height: auto;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 140px;
+  margin-left: 140px;
   font-family: Helvetica;
   color: black;
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
+  overflow: hidden;
 
 }
 h1 {
@@ -17,7 +18,7 @@ h1 {
 .input_meme {
   appearance: none;
 }
-.label_meme:hover {
+.meme:hover .label_meme {
   color: blueviolet;
 }
 .img_meme {
@@ -29,7 +30,11 @@ h1 {
   transition: 1s;
 }
 body {
-    background-color: #C1CAF3;
+    background-color: #FFFC97;
+}
+.input_meme:checked ~ label .img_meme {
+  transform: scaleY(1);
+  height: auto;
 }
 .meme:hover label .img_meme {
   transform: scaleY(1);
@@ -37,4 +42,15 @@ body {
 }
 .input_meme:checked ~ label .icon {
     visibility: hidden;
+    width: 0;
 }
+hr {
+  border: 2px solid #86E59E;
+}
+.icon_cancel {
+  visibility: hidden;
+}
+.input_meme:checked ~ label .icon_cancel {
+  visibility: visible;
+}
+
