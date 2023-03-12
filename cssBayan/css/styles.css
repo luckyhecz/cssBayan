@@ -76,7 +76,7 @@ hr {
 
 @media (min-width: 820px) and (max-width: 1919px) {
   .meme_all {
-    max-width: 40%;
+    width: 60%;
   }
   .img_meme {
     width: 50%;
@@ -90,7 +90,7 @@ hr {
 }
 @media (min-width: 1920px) {
   .meme_all {
-    max-width: 40%;
+    width: 40%;
   }
   .img_meme {
     width: 40%;
