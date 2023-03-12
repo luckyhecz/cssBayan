@@ -5,9 +5,9 @@
   margin-left: 0;
   font-family: Helvetica;
   color: black;
-  position: relative;
-  padding-left: 1em;
-  padding-right: 1em;
+  position: static;
+  padding-left: 0;
+  padding-right: 0;
   overflow: hidden;
   max-width: 75vw;
 }
@@ -33,7 +33,6 @@ h1 {
   visibility: visible;
 }
 .icon, .icon_cancel {
-  float: right;
   opacity: 0;
 }
 .input_meme {
@@ -100,6 +99,9 @@ hr {
   .label_meme {
     font-size: 2em;
   }
+  .img_meme, .input_meme, .label_meme {
+    cursor: pointer;
+  }
 }
 .icon {
   visibility: hidden;
@@ -110,9 +112,13 @@ hr {
 }
 .meme_all:hover .icon_cancel {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .meme_all:hover .icon {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.2s;
+}
+#flex {
+  display: flex;
+  justify-content: space-between;
 }
