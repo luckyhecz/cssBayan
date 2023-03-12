@@ -28,7 +28,7 @@
   max-width: 80%;
 }
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 .input_meme:checked ~ label .icon_cancel {
@@ -74,9 +74,9 @@ hr {
 }
 
 
-@media (min-width: 820px) {
+@media (min-width: 820px) and (max-width: 1919px) {
   .meme_all {
-    width: 40%;
+    max-width: 40%;
   }
   .img_meme {
     width: 50%;
@@ -90,7 +90,7 @@ hr {
 }
 @media (min-width: 1920px) {
   .meme_all {
-    width: 60%;
+    max-width: 40%;
   }
   .img_meme {
     width: 40%;
