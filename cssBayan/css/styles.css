@@ -22,6 +22,8 @@
   height: 0; /* уменьшает неактивное поле*/
   transform-origin: center;
   margin: 1em auto;
+  margin-top: 0;
+  margin-bottom: 0;
   transition: 1s;
   max-width: 80%;
 }
