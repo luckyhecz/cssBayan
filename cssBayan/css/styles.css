@@ -67,7 +67,7 @@ body {
   visibility: visible;
 }
 hr {
-  border: 2px solid #86E59E;
+  border: .02em solid #86E59E;
 }
 .icon_cancel {
   visibility: hidden;
