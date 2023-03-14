@@ -101,9 +101,7 @@ hr {
   .label_meme {
     font-size: 2em;
   }
-  .img_meme, .input_meme, .label_meme {
-    cursor: pointer;
-  }
+  
 }
 .icon {
   visibility: hidden;
@@ -124,3 +122,6 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+.img_meme, .input_meme, .label_meme {
+    cursor: pointer;
+  }
